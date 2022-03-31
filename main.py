@@ -1,7 +1,8 @@
 tekst = str(input("Sisesta tekst: "))
-print("See on teie tekst: " + tekst)
 hind = float(input("Sisestage 1 kauba hind: "))
-print("Ühe kauba hind on: " + str(hind) )
 kogus = int(input("Sisesta kogus: "))
+koguhind = hind * kogus
+print("See on teie tekst: " + tekst)
+print("Ühe kauba hind on: " + str(hind) )
 print("Teie kogus on: " + str(kogus) )
-print("Ühe kauba hind on: " + str(hind) + " Teie kogus on : " + str(kogus))
+print("Kogu kauba hind on : " + str(koguhind))
