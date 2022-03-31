@@ -30,6 +30,7 @@ def soodustus(hind):
         return 0
 koguhind = hind * kogus
 lopuhind = round(koguhind + ((koguhind / 100) * kaibemaks(riik)),2)
+soodushind = round(koguhind - (koguhind / 100 * soodustus(hind)),2)
 print("See on teie tekst: " + tekst)
 print("Ühe kauba hind on: " + str(hind) )
 print("Teie kogus on: " + str(kogus) )
@@ -38,3 +39,4 @@ print("Teie riigi kood on" + str(riik))
 print(riik, "maks on", kaibemaks(riik), "%")
 print("Teie lõpuhind on: " + str(lopuhind))
 print("Teie soodustus on " + str(soodustus(hind)) + "%")
+print("Teie soodusega hind on: " + str(soodushind))
