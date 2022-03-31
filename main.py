@@ -15,6 +15,19 @@ def kaibemaks(riigikood):
         return 6.85
     else:
         return 0
+def soodustus(hind):
+    if hind >= 50000:
+        return 15
+    elif hind >= 10000:
+        return 10
+    elif hind >= 7000:
+        return 7
+    elif hind >= 5000:
+        return 5
+    elif hind >= 1000:
+        return 3
+    else:
+        return 0
 koguhind = hind * kogus
 lopuhind = round(koguhind + ((koguhind / 100) * kaibemaks(riik)),2)
 print("See on teie tekst: " + tekst)
@@ -24,3 +37,4 @@ print("Kogu kauba hind on : " + str(koguhind))
 print("Teie riigi kood on" + str(riik))
 print(riik, "maks on", kaibemaks(riik), "%")
 print("Teie lõpuhind on: " + str(lopuhind))
+print("Teie soodustus on " + str(soodustus(hind)) + "%")
