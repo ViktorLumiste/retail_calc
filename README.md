@@ -28,4 +28,4 @@ We use [git](https://git-scm.com/) for versioning.
 
 ## Authors
 
-* **Viktor Lumiste** - *All the  work* - [PurpleBooth](https://github.com/ViktorLumiste)
+* **Viktor Lumiste** - *All the  work* - [Viktor Lumiste](https://github.com/ViktorLumiste)
